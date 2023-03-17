@@ -5,10 +5,229 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <p>Hello world</p>
+<body class="container" data-bs-target="#navbar-example2" data-bs-spy="scroll">
+    
+    <header class="fixed-top"> <!-- Header starting point -->
+        <div> <!-- gray container -->
+            <ul class="nav justify-content-end lil-container">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+        <nav id="navbar-example2" class="navbar navbar-light bg-light px-3"> <!-- main nav -->
+            <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">First</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading3">Tercero</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-fluid"> <!-- Main starting point -->
+
+
+        <section class="row align-items-center vh-100"> <!-- Hero section -->
+            <div class="col-md-6">
+                <h1 class="display-4">¡Bienvenido!</h1>
+                <p class="lead">Este es un ejemplo de un hero utilizando Bootstrap.</p>
+                <button class="btn btn-primary btn-lg">Comenzar</button>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x500" class="img-fluid">
+            </div>
+        </section>
+        <section class="py-5"> <!--  Features section-->
+            <h2 class="text-center mb-4">Título de la sección</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen de ejemplo">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3">Título 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac nulla eu lorem ornare vestibulum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen de ejemplo">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3">Título 2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac nulla eu lorem ornare vestibulum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen de ejemplo">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3">Título 3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac nulla eu lorem ornare vestibulum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen de ejemplo">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3">Título 4</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac nulla eu lorem ornare vestibulum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">Enlace</a>
+            </div>
+        </section>
+
+        <section class="section-top"> <!--  News section-->
+            <div class="container">
+                <h2 class="text-center">Título de la sección</h2>
+                <div class="row justify-content-center d-flex">
+                    <div class="col-md-6">
+                        <!-- Contenedor 1 -->
+                        <div class="row top-row">
+                            <div class="col-md-4 text-center">
+                                <img src="https://via.placeholder.com/150" alt="Imagen del contenedor 1" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <h3>Título del contenedor 1</h3>
+                                <h4>Subtítulo del contenedor 1</h4>
+                                <p>Texto del contenedor 1</p>
+                            </div>
+                        </div>
+                        <div class="row top-row">
+                            <div class="col-md-4 text-center">
+                                <img src="https://via.placeholder.com/150" alt="Imagen del contenedor 1" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <h3>Título del contenedor 1</h3>
+                                <h4>Subtítulo del contenedor 1</h4>
+                                <p>Texto del contenedor 1</p>
+                            </div>
+                        </div>
+                        <div class="row top-row">
+                            <div class="col-md-4 text-center">
+                                <img src="https://via.placeholder.com/150" alt="Imagen del contenedor 1" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <h3>Título del contenedor 1</h3>
+                                <h4>Subtítulo del contenedor 1</h4>
+                                <p>Texto del contenedor 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Contenedor 2 -->
+                        <div class="row top-row">
+                            <div class="col-md-4 text-center">
+                                <img src="https://via.placeholder.com/150" alt="Imagen del contenedor 2" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <h3>Título del contenedor 2</h3>
+                                <h4>Subtítulo del contenedor 2</h4>
+                                <p>Texto del contenedor 2</p>
+                            </div>
+                        </div>
+                        <div class="row top-row">
+                            <div class="col-md-4 text-center">
+                                <img src="https://via.placeholder.com/150" alt="Imagen del contenedor 2" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <h3>Título del contenedor 2</h3>
+                                <h4>Subtítulo del contenedor 2</h4>
+                                <p>Texto del contenedor 2</p>
+                            </div>
+                        </div>
+                        <div class="row top-row">
+                            <div class="col-md-4 text-center">
+                                <img src="https://via.placeholder.com/150" alt="Imagen del contenedor 2" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <h3>Título del contenedor 2</h3>
+                                <h4>Subtítulo del contenedor 2</h4>
+                                <p>Texto del contenedor 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+          
+
+        <section class="section-top">  <!--  client section-->
+            <div class="container">
+                <h2 class="text-center">Nuestros clientes</h2>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-md-2 col-sm-4 col-6">
+                                    <img src="https://via.placeholder.com/150" class="d-block w-100" alt="Logo 1">
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-6">
+                                    <img src="https://via.placeholder.com/150" class="d-block w-100" alt="Logo 2">
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-6">
+                                    <img src="https://via.placeholder.com/150" class="d-block w-100" alt="Logo 3">
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-6">
+                                    <img src="https://via.placeholder.com/150" class="d-block w-100" alt="Logo 4">
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-6">
+                                    <img src="https://via.placeholder.com/150" class="d-block w-100" alt="Logo 5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-dark text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Logo</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Contacto</h2>
+                        <p>Información de contacto aquí</p>
+                    </div>
+                </div>
+            </div>
+          </footer>
+        
+    </main>
+ 
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
