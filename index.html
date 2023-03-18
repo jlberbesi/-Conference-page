@@ -7,6 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> 
+    <script src="https://kit.fontawesome.com/a3a8e1bf35.js" crossorigin="anonymous"></script>
+
 </head>
 <body class="container" data-bs-target="#navbar-example2" data-bs-spy="scroll">
     
@@ -14,30 +17,42 @@
         <div> <!-- gray container -->
             <ul class="nav justify-content-end lil-container">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    <a class="nav-link active Opposite-item" aria-current="page" href="#">Sobre Odonti</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link Opposite-item" href="#">Convenios</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link Opposite-item" href="#">Empleos</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Eventos</a>
+                </li>
+                <li class="nav-item"></li>
+                    <a class="nav-link opposite-social" href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="nav-item"></li>
+                    <a class="nav-link opposite-social" href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="nav-item"></li>
+                    <a class="nav-link opposite-social" href="#"><i class="fa-brands fa-medium"></i></a>
                 </li>
             </ul>
         </div>
         <nav id="navbar-example2" class="navbar navbar-light bg-light px-3"> <!-- main nav -->
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand logo-main" href="#"><img src="img/main.png" alt="Descripción de la imagen" width="106.26" height="44.83"></a>
             <ul class="nav nav-pills">
                 <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading1">First</a>
+                    <a class="nav-link nav-secondary" href="#scrollspyHeading1">Tratamientos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                    <a class="nav-link nav-secondary" href="#scrollspyHeading2">Promociones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading3">Tercero</a>
+                    <a class="nav-link nav-secondary" href="about.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" btn btn-primary" href="#"> <i class="fa-solid fa-square-phone"></i> +57 300 233 14 60</a>
                 </li>
             </ul>
         </nav>
@@ -46,95 +61,88 @@
     <main class="container-fluid"> <!-- Main starting point -->
 
 
-        <section class="row align-items-center vh-100"> <!-- Hero section -->
-            <div class="col-md-6">
-                <h1 class="display-4">¡Bienvenido!</h1>
-                <p class="lead">Este es un ejemplo de un hero utilizando Bootstrap.</p>
-                <button class="btn btn-primary btn-lg">Comenzar</button>
+        <section class="row align-items-center vh-100 extra"> <!-- Hero section -->
+            <div class="col-md-7 vh-100 top-hero top-copy custom">
+                <p class="lead no-bottom left">Estamos seguros, que tenemos algo bueno para vos!</p>
+                <h1 class="display-4 main-copy left">La sonrisa perfecta, a<span class="focus animated-underline"> tu alcance.</span></h1>
+                <button class="btn btn-primary btn-lg left"><i class="fa-solid fa-tooth"></i> Buscar clínica</button>
             </div>
-            <div class="col-md-6">
-                <img src="https://via.placeholder.com/500x500" class="img-fluid">
+            <div class="col-md-6 vh-100 top-hero top-hero-img">
+                <img src="img/hero_03.jpg" class="img-fluid">
+            </div>
+            <div class="col-12 text-center mt-4 floating-div">
+                <a href="#" class="btn  btn-lg btn-more">Más</a>
             </div>
         </section>
-        <section class="py-5"> <!--  Features section-->
-            <h2 class="text-center mb-4">Título de la sección</h2>
+        <section class="py-5 toppi features-width full-width"> <!--  Features section-->
+            <h2 class="text-center mb-4 extra-center">Método Odonti</h2>
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen de ejemplo">
+                    <div class="card h-100 icon">
+                        <i class="fa-solid fa-house house-det"></i>
                         <div class="card-body text-center">
-                            <h5 class="card-title mb-3">Título 1</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac nulla eu lorem ornare vestibulum.</p>
+                            <h5 class="card-title mb-3 tittle-det">Red de clínicas propias </h5>
+                            <p class="card-text text-para">Contamos con 48 clínicas propias en 20 ciudades de Colombia, para estar más cerca de ti</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen de ejemplo">
+                    <div class="card h-100 icon">
+                        <i class="fa-solid fa-layer-group house-det"></i>
                         <div class="card-body text-center">
-                            <h5 class="card-title mb-3">Título 2</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac nulla eu lorem ornare vestibulum.</p>
+                            <h5 class="card-title mb-3 tittle-det">Tecnologia de vanguardia</h5>
+                            <p class="card-text text-para">TAC 3D, CAD CAM...  Tecnología y equipamiento punteros te esperan en Odonti.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen de ejemplo">
+                    <div class="card h-100 icon">
+                        <i class="fa-solid fa-money-bill house-det"></i>
                         <div class="card-body text-center">
-                            <h5 class="card-title mb-3">Título 3</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac nulla eu lorem ornare vestibulum.</p>
+                            <h5 class="card-title mb-3 tittle-det">Financiación hasta 60 meses</h5>
+                            <p class="card-text text-para">Preocúpate solo por sonreír. Dispondrás hasta de 5 años para financiar tu tratamiento a tu ritmo.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen de ejemplo">
+                    <div class="card h-100 icon">
+                        <i class="fa-solid fa-teeth-open house-det"></i>
                         <div class="card-body text-center">
-                            <h5 class="card-title mb-3">Título 4</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac nulla eu lorem ornare vestibulum.</p>
+                            <h5 class="card-title mb-3 tittle-det">Odontología 360ª</h5>
+                            <p class="card-text text-para">Sea cual sea tu problema, tu clínica Odonti más cercana podrá ayudarte.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="text-center mt-4">
-                <a href="#" class="btn btn-primary">Enlace</a>
+                <a href="#" class="btn btn-primary">Como será tu primera visita</a>
             </div>
         </section>
 
-        <section class="section-top"> <!--  News section-->
+        <section class="section-top full-width"> <!--  News section-->
             <div class="container">
-                <h2 class="text-center">Título de la sección</h2>
+                <h2 class="white-copy">Nuestros tratamientos</h2>
                 <div class="row justify-content-center d-flex">
                     <div class="col-md-6">
                         <!-- Contenedor 1 -->
                         <div class="row top-row">
                             <div class="col-md-4 text-center">
-                                <img src="https://via.placeholder.com/150" alt="Imagen del contenedor 1" class="img-fluid">
+                                <img src="img/diseñodesonrisa_odonti.jpg" alt="Imagen del contenedor 1" class="img-fluid">
                             </div>
                             <div class="col-md-8">
-                                <h3>Título del contenedor 1</h3>
-                                <h4>Subtítulo del contenedor 1</h4>
-                                <p>Texto del contenedor 1</p>
+                                <h3 class="tittle-sec">Diseño de sonrisa</h3>
+                                <h4 class="tittle-thi">Buen dibujo de sonrisa puedes sobresalir</h4>
+                                <p class="tittle-fou">consiste en llevar los dientes a unas condiciones ideales de tamaño forma y color, según la cara, la personalidad y los rasgos específicos de cada paciente.</p>
                             </div>
                         </div>
                         <div class="row top-row">
                             <div class="col-md-4 text-center">
-                                <img src="https://via.placeholder.com/150" alt="Imagen del contenedor 1" class="img-fluid">
+                                <img src="img/blanqueamiento_odonti.jpg" alt="Imagen del contenedor 1" class="img-fluid">
                             </div>
                             <div class="col-md-8">
-                                <h3>Título del contenedor 1</h3>
-                                <h4>Subtítulo del contenedor 1</h4>
-                                <p>Texto del contenedor 1</p>
-                            </div>
-                        </div>
-                        <div class="row top-row">
-                            <div class="col-md-4 text-center">
-                                <img src="https://via.placeholder.com/150" alt="Imagen del contenedor 1" class="img-fluid">
-                            </div>
-                            <div class="col-md-8">
-                                <h3>Título del contenedor 1</h3>
-                                <h4>Subtítulo del contenedor 1</h4>
-                                <p>Texto del contenedor 1</p>
+                                <h3 class="tittle-sec">Título del contenedor 1</h3>
+                                <h4 class="tittle-thi">Subtítulo del contenedor 1</h4>
+                                <p class="tittle-fou">Texto del contenedor 1</p>
                             </div>
                         </div>
                     </div>
@@ -142,32 +150,22 @@
                         <!-- Contenedor 2 -->
                         <div class="row top-row">
                             <div class="col-md-4 text-center">
-                                <img src="https://via.placeholder.com/150" alt="Imagen del contenedor 2" class="img-fluid">
+                                <img src="img/implantes_odonti.jpg" alt="Imagen del contenedor 2" class="img-fluid">
                             </div>
                             <div class="col-md-8">
-                                <h3>Título del contenedor 2</h3>
-                                <h4>Subtítulo del contenedor 2</h4>
-                                <p>Texto del contenedor 2</p>
+                                <h3 class="tittle-sec">Título del contenedor 2</h3>
+                                <h4 class="tittle-thi">Subtítulo del contenedor 2</h4>
+                                <p class="tittle-fou">Texto del contenedor 2</p>
                             </div>
                         </div>
                         <div class="row top-row">
                             <div class="col-md-4 text-center">
-                                <img src="https://via.placeholder.com/150" alt="Imagen del contenedor 2" class="img-fluid">
+                                <img src="img/ortodoncia_odonti.jpg" alt="Imagen del contenedor 2" class="img-fluid">
                             </div>
                             <div class="col-md-8">
-                                <h3>Título del contenedor 2</h3>
-                                <h4>Subtítulo del contenedor 2</h4>
-                                <p>Texto del contenedor 2</p>
-                            </div>
-                        </div>
-                        <div class="row top-row">
-                            <div class="col-md-4 text-center">
-                                <img src="https://via.placeholder.com/150" alt="Imagen del contenedor 2" class="img-fluid">
-                            </div>
-                            <div class="col-md-8">
-                                <h3>Título del contenedor 2</h3>
-                                <h4>Subtítulo del contenedor 2</h4>
-                                <p>Texto del contenedor 2</p>
+                                <h3 class="tittle-sec">Título del contenedor 2</h3>
+                                <h4 class="tittle-thi">Subtítulo del contenedor 2</h4>
+                                <p class="tittle-fou">Texto del contenedor 2</p>
                             </div>
                         </div>
                     </div>
@@ -176,7 +174,7 @@
         </section>
           
 
-        <section class="section-top">  <!--  client section-->
+        <section class="section-top full-width">  <!--  client section-->
             <div class="container">
                 <h2 class="text-center">Nuestros clientes</h2>
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -212,7 +210,7 @@
                 </div>
             </div>
         </section>
-        <footer class="bg-dark text-white">
+        <footer class="bg-dark text-white full-width">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
